@@ -23,26 +23,17 @@ $stack-sans-serif	: 'Open Sans', sans-serif;
 // Margin top
 $mt  : 1em;
 
+// Display Inline-Block
+$inbk	:  inline-block;
+
 //  Asset paths
 $path-img  : '../img';
 
-// Media query breakpoint
-$brk-narrow : '(min-width: 768px)';
-$brk-wide 	: '(min-width: 1024px)';
-
-//  Write mixins for media queries - with help from warren.leyes
+//  Media Queries breakpoint
 $tablet-width: 768px;
 $desktop-width: 1024px;
-@mixin tablet {
-  @media (min-width: #{$tablet-width}) {
-    @content;
-  }
-}
-@mixin desktop {
-  @media (min-width: #{$desktop-width}) {
-    @content;
-  }
-}
+
+
 
 
 

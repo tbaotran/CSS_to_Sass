@@ -17,24 +17,24 @@ nav a {
   padding: 12px;
   font-size: 1.2em; 
   display:inline-block ;
-  @media #{$brk-wide} {
+    @include desktop {
     display: none;
   }
-    @media #{$brk-narrow} {
+    @include tablet {
     display: none;
   }
 }
 
 .main-nav {
   display: none;
-	@media #{$brk-wide} {
+	@include desktop {
     position: relative;
     float:  right;
     margin: 1em 0;
     z-index: 100;
     display: inline-block;
     }
-  @media #{$brk-narrow} {
+  @include tablet {
     display: inline-block;
   }
 }
@@ -43,7 +43,7 @@ nav a {
   padding-top: 0.6em;
   padding-bottom: 0.6em;
   margin-bottom: 4px;
-    @media #{$brk-narrow} {
+    @include tablet {
   	display: inline-block;
     background-color: rgb(249,249,249);
     margin-left: 1em;

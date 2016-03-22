@@ -28,13 +28,13 @@
 /*  hides footer-nav for non-mobile screen sizes  */
 .footer-nav {
   display: none;
-  @media #{$brk-narrow} {
+  @include tablet {
   display: inline-block;
   }
 }
 
 .footer-nav li {
-  @media #{$brk-narrow} {
+  @include tablet {
   display: inline-block;
   margin: 0 1em;
   background-color: rgb(249,249,249);
@@ -44,7 +44,7 @@
 /*  display footer-nav for mobile screen sizes  */
 .footer-nav-mobile {
   display: inline-block;
-  @media #{$brk-narrow} {
+  @include tablet {
   display: none;
   }
 }
@@ -59,7 +59,7 @@
 /*  set margin/center paragraph about contacting me  */
 .main-footer p {
   margin: 2em auto;
-  @media #{$brk-narrow} {
+  @include tablet {
   width: 60%;
   }
 }

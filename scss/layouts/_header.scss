@@ -15,10 +15,10 @@
       @extend %clearfix;
       padding-top: 1.75em;
       padding-bottom: 1.75em;
-      @media #{$brk-wide} {
+      @include desktop {
       position: relative;
       }
-      @media #{$brk-narrow} {
+      @include tablet {
       padding-bottom: 3em;
       }
     }
@@ -26,31 +26,31 @@
       width: 70%;
       margin-top: 0.5em;
       margin-bottom: 0.5em;
-      @media #{$brk-wide} {
+      @include desktop  {
       float: right;
       clear: right;
       }
-      @media #{$brk-narrow} {
+      @include tablet {
       max-width: 40%;
       float: right; 
-      display: inline-block;  
+      display: $inbk;  
       }
     }
     &-intro {
       margin-top: 0.8em;
       margin-bottom: 0.8em;
-      @media #{$brk-wide} {
+      @include desktop  {
       margin-top: 0;
       max-width: 55%;
-      display: inline-block; 
+      display: $inbk; 
       }
-      @media #{$brk-narrow} {
+      @include tablet {
       margin-top: 0;
       max-width: 60%;
       font-size: 1.25em;
       float:left;
       text-align: left;
-      display: inline-block;  
+      display: $inbk;  
       }
     }
 }
