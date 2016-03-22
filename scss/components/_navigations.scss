@@ -1,0 +1,52 @@
+/************************************
+  NAVIGATION
+************************************/
+
+/*  remove default list-style from all navs  */
+nav {
+  list-style: none; 
+}
+
+/*  set nav link font size and weight  */
+nav a {
+  font-size: 0.85em;
+  font-weight: bold;
+}
+
+.menu-icon {
+  padding: 12px;
+  font-size: 1.2em; 
+  display:inline-block ;
+  @media #{$brk-wide} {
+    display: none;
+  }
+    @media #{$brk-narrow} {
+    display: none;
+  }
+}
+
+.main-nav {
+  display: none;
+	@media #{$brk-wide} {
+    position: relative;
+    float:  right;
+    margin: 1em 0;
+    z-index: 100;
+    display: inline-block;
+    }
+  @media #{$brk-narrow} {
+    display: inline-block;
+  }
+}
+/*  set spacing for top nav items  */
+.main-nav li {
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+  margin-bottom: 4px;
+    @media #{$brk-narrow} {
+  	display: inline-block;
+    background-color: rgb(249,249,249);
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}

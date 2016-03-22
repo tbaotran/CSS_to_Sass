@@ -1,0 +1,64 @@
+/* Global Layout Set-up */
+* { 
+  box-sizing: border-box;
+}
+  
+/* Link Styles */
+
+a {
+    &:link {
+      text-decoration: none;
+      color: $color-link-default;
+    }
+    &:visited {
+      color: $color-link-visited; 
+    }
+    &:hover {
+      color: $color-link-hoover;
+    }
+}
+
+/*  set font-family to Open Sans  */
+body {
+  font-family: $stack-sans-serif;
+}
+
+/*  center h2 and pad main heading  */
+h2 {
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  @media #{$brk-wide} {
+    display: inline-block;
+    float: left;
+  }
+}
+
+/*  set font-weight and center h3  */
+h3 {
+  font-weight: normal;
+  margin: 0.9em auto;
+}
+
+/*  max-width for images  */
+img {
+  max-width: 100%;
+}
+
+/*  set p font-weight & line spacing  */
+p {
+  font-weight: 300;
+  line-height: 1.5em;
+  margin: 0;
+}
+
+/*  remove all styling from lists  */
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+

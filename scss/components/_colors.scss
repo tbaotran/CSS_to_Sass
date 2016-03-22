@@ -1,0 +1,39 @@
+/************************************
+  COLORS
+************************************/
+
+/*  body background color */
+body {
+  background-color: $alabaster;
+}
+
+/*  heading and span text color  */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+  color: $mine-shaft;
+}
+
+/*  nav items background color */
+nav li {
+  background-color: $white;
+}
+
+/*  nav link text color  */
+nav a {
+  color: $mine-shaft;
+}
+
+/* paragraph text color */
+p {
+  color: $dove-gray ;
+}
+
+/*  main content background color  */
+.main-content {
+  background-color: $white;
+}

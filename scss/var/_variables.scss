@@ -1,0 +1,50 @@
+
+// Descriptiive color variables
+$white			:	#fff;
+$black			:	#000;
+$grey			:	#878787;
+$alabaster 		: 	#F9F9F9;  //rgb(249,249,249)
+$mine-shaft 	:	#393939;  //rgb(57, 57, 57)
+$dove-gray   	:	#6c6c6c;  //rgb(108,108,108) 
+
+$regent-st-blue : 	#add8e6;
+$sunglow     	: 	#ffcc33;
+$yellow-orange  : 	#ffa949;
+
+
+// Functional color variables
+$color-link-default : $mine-shaft;
+$color-link-visited : $regent-st-blue;
+$color-link-hoover	: $yellow-orange;
+
+// Font stacks
+$stack-sans-serif	: 'Open Sans', sans-serif;
+
+// Margin top
+$mt  : 1em;
+
+//  Asset paths
+$path-img  : '../img';
+
+// Media query breakpoint
+$brk-narrow : '(min-width: 768px)';
+$brk-wide 	: '(min-width: 1024px)';
+
+//  Write mixins for media queries.
+$tablet-width: 768px;
+$desktop-width: 1024px;
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+
+
+
+

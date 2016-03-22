@@ -1,0 +1,118 @@
+/************************************
+  FOOTER
+************************************/
+
+/*  set margin/center bottom bar  */
+.bottom-bar {
+  @extend %clearfix;
+  margin: 1em auto;
+}
+
+/*  set spacing for contact info  */
+.contact-info {
+  padding-bottom: 1em;
+  margin-bottom: 2em;
+}
+
+/*  set margin/center contact info  */
+.contact-info p {
+  margin: 1em auto;
+}
+
+/*  sets all bottom footer navs to float on right side of page  */
+.footer-nav,
+.footer-nav-mobile {
+  float: right;
+}
+
+/*  hides footer-nav for non-mobile screen sizes  */
+.footer-nav {
+  display: none;
+  @media #{$brk-narrow} {
+  display: inline-block;
+  }
+}
+
+.footer-nav li {
+  @media #{$brk-narrow} {
+  display: inline-block;
+  margin: 0 1em;
+  background-color: rgb(249,249,249);
+  }
+}
+
+/*  display footer-nav for mobile screen sizes  */
+.footer-nav-mobile {
+  display: inline-block;
+  @media #{$brk-narrow} {
+  display: none;
+  }
+}
+
+/*  set spacing/center footer  */
+.main-footer {
+  margin: 1em auto;
+  @extend %centered;
+  padding-top: 1em;
+}
+
+/*  set margin/center paragraph about contacting me  */
+.main-footer p {
+  margin: 2em auto;
+  @media #{$brk-narrow} {
+  width: 60%;
+  }
+}
+
+/*  float student name at bottom to left side and set font properties and margins */
+.student-name {
+  float: left;
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+footer {
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 0 40px 20px;
+}
+
+footer .copyright {
+  top: -8px;
+  font-size: .75em;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+a.social {
+  display: inline-block;
+  text-indent: -9999px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  opacity: .4;
+  transition: all .5s;
+}
+a.twitter {
+  background-image: url(#{$path-img}/twitter.svg);
+}
+a.linkedin {
+  background-image: url(#{$path-img}/linkedin.svg);
+}
+a.github {
+  background-image: url(#{$path-img}/github.svg);
+}
+a.social:hover {
+  opacity: 1;
+}

@@ -1,0 +1,58 @@
+/************************************
+  HEADING
+************************************/
+
+/*  centers elements in heading  */
+.main-header {
+  @extend %centered;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/*  nesting rule for profile */
+.profile {
+    &-banner {
+      @extend %clearfix;
+      padding-top: 1.75em;
+      padding-bottom: 1.75em;
+      @media #{$brk-wide} {
+      position: relative;
+      }
+      @media #{$brk-narrow} {
+      padding-bottom: 3em;
+      }
+    }
+    &-picture {
+      width: 70%;
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+      @media #{$brk-wide} {
+      float: right;
+      clear: right;
+      }
+      @media #{$brk-narrow} {
+      max-width: 40%;
+      float: right; 
+      display: inline-block;  
+      }
+    }
+    &-intro {
+      margin-top: 0.8em;
+      margin-bottom: 0.8em;
+      @media #{$brk-wide} {
+      margin-top: 0;
+      max-width: 55%;
+      display: inline-block; 
+      }
+      @media #{$brk-narrow} {
+      margin-top: 0;
+      max-width: 60%;
+      font-size: 1.25em;
+      float:left;
+      text-align: left;
+      display: inline-block;  
+      }
+    }
+}
+
+

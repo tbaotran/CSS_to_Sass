@@ -1,0 +1,142 @@
+/************************************
+  MEDIA QUERIES
+************************************/
+
+/*  For tablet-sized screens (768px+) */
+// @media (min-width: 768px) {
+  
+  /*  resize wrapper width/padding  */
+  // .wrapper {
+  //   max-width: 768px;
+  //   padding: 0 32px;
+  // }
+
+  /*  change main-nav to horizontal nav; also adjust bg color and margins  */
+  // .main-nav li {
+  //   display: inline-block;
+  //   background-color: rgb(249,249,249);
+  //   margin-left: 1em;
+  //   margin-right: 1em;
+  // }
+
+  /*  create bottom padding for profile banner  */
+  // .profile-banner {
+  //   padding-bottom: 3em;
+  // }
+
+  /*  adjust profile picture max size and float to right side of page  */
+  // .profile-picture {
+  //   max-width: 40%;
+  //   float: right; 
+  // }
+
+  /*  adjust profile intro size and float to left side of page  */
+  // .profile-intro {
+  //   max-width: 60%;
+  //   font-size: 1.25em;
+  //   float:left;
+  //   text-align: left;
+  // }
+
+  /*  change profile contents from vertical to horizontal  */
+  // .profile-picture,
+  // .profile-intro {
+  //   display: inline-block;  
+  // }
+
+  /*  resize portfolio projects to display in two columns  */
+  // .portfolio-project {
+  //   display: inline-block;
+  //   width: 49%;
+  //   margin-right: 4px;
+  // }
+
+  /*  center project info/adjust size  */
+  // .project-info {
+  //   margin: 0 auto;
+  //   font-size: 14px;
+  //   width: 80%;
+  // }
+
+  /*  adjust width of paragraph about contacting me  */
+  // .main-footer p {
+  //   width: 60%;
+  // }
+
+  /*  hides the mobile footer nav  */
+  // .footer-nav-mobile {
+  //   display: none;
+  // }
+
+  /*  displays the footer nav for tablet/desktop size screens  */
+  // .footer-nav {
+  //   display: inline-block;
+  // }
+
+  /*  displays footer nav items horizontally; also adjust margins and bg color  */
+//   .footer-nav li {
+//     display: inline-block;
+//     margin: 0 1em;
+//     background-color: rgb(249,249,249);
+//   }
+// }
+
+/*  For desktop-sized screens (1024px+)  */
+// @media (min-width: 1024px) {
+  
+  /*  resize wrapper max-width  */
+  // .wrapper {
+  //   max-width: 1024px;
+  // }
+
+  /*  float main header to left and display inline with main-nav  */
+  // h2 {
+  //   display: inline-block;
+  //   float: left;
+  // }
+
+  /*  float main-nav to right size of page and adjust spacing  */
+  // .main-nav {
+  //   position: relative;
+  //   float:  right;
+  //   margin: 1em 0;
+  //   z-index: 100;
+  // }
+
+  /*  change position of profile banner to 'relative' to position elements inside  */
+  // .profile-banner {
+  //   position: relative;
+  // }
+
+  /*  float profile picture to right and clear the main-nav  */
+  // .profile-picture {
+  //   float: right;
+  //   clear: right;
+  // }
+
+  /*  adjust width/change position to absolute; also positions intro paragraph on left side of profile picture  */
+  // .profile-intro {
+  //   position: absolute;
+  //   max-width: 55%;
+  //   bottom: 4em;
+  //   left: 0;
+  // }
+
+  /*  centers content inside main-content and adjust margins  */
+  // .main-content {
+  //   margin: 0 1em;
+  //   text-align: center;
+  // }
+
+  /*  resize portfolio projects to display in three columns; also adjust margin spacing  */
+  // .portfolio-project {
+  //   width: 30%;
+  //   margin: 32px 12px;
+  // }
+
+  /*  adjust project info sizing  */
+  // .project-info  {
+  //   width: 75%;
+  // }
+// }
+

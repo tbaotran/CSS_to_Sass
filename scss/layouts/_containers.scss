@@ -1,0 +1,78 @@
+/************************************
+  WRAPPER
+************************************/
+
+/*  center wrapper container and set width/padding  */
+.wrapper {
+  @extend %clearfix;
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0 16px;
+
+  @media #{$brk-narrow} {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+
+  @media #{$brk-wide} {
+    max-width: 1024px;
+  }
+}
+/************************************
+  SECTION: MAIN CONTENT
+************************************/
+/*  set padding/margin for main-content area  */
+.main-content {
+  padding-top: 2em;
+  margin-bottom: 1em;
+  padding-bottom: 2em;
+  @media #{$brk-wide} {
+    margin: 0 1em;
+    text-align: center;
+  }
+}
+
+/*  centers Portfolio section heading and adds margins  */
+#portfolio {
+  @extend %centered;
+  margin-top: $mt;
+  margin-bottom: 3.75em;
+}
+
+/************************************
+  PORTFOLIO PROJECTS
+************************************/
+/*  center/provide spacing for portfolio projects on page  */
+.portfolio-project {
+  @extend %centered;
+  width: 100%;
+  padding-bottom: 1em;
+  margin-top: $mt;
+  margin-bottom: 0.9em;
+  @media #{$brk-narrow} {
+  display: inline-block;
+  width: 49%;
+  margin-right: 4px;
+  }
+  @media #{$brk-wide} {
+  display: inline-block;
+  width: 30%;
+  margin: 32px 8px;
+  }
+}
+
+/*  set font-size/line-height for project info  */
+.project-info {
+  line-height: 1.5em;
+  font-size: 16px;
+  @media #{$brk-wide} {
+    width: 75%;
+  }
+  @media #{$brk-narrow} {
+  margin: 0 auto;
+  font-size: 14px;
+  width: 80%;
+  }
+}
+
+
