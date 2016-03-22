@@ -49,12 +49,12 @@
   padding-bottom: 1em;
   margin-top: $mt;
   margin-bottom: 0.9em;
-  @media #{$brk-narrow} {
+  @include tablet{
   display: inline-block;
   width: 49%;
   margin-right: 4px;
   }
-  @media #{$brk-wide} {
+  @include desktop {
   display: inline-block;
   width: 30%;
   margin: 32px 8px;
@@ -65,10 +65,10 @@
 .project-info {
   line-height: 1.5em;
   font-size: 16px;
-  @media #{$brk-wide} {
+  @include desktop {
     width: 75%;
   }
-  @media #{$brk-narrow} {
+  @include tablet {
   margin: 0 auto;
   font-size: 14px;
   width: 80%;
