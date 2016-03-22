@@ -9,12 +9,12 @@
   margin: 0 auto;
   padding: 0 16px;
 
-  @media #{$brk-narrow} {
+  @include tablet {
     max-width: 768px;
     padding: 0 32px;
   }
 
-  @media #{$brk-wide} {
+  @include desktop {
     max-width: 1024px;
   }
 }
@@ -26,7 +26,7 @@
   padding-top: 2em;
   margin-bottom: 1em;
   padding-bottom: 2em;
-  @media #{$brk-wide} {
+  @include desktop {
     margin: 0 1em;
     text-align: center;
   }

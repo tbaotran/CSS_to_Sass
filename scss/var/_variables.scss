@@ -30,11 +30,11 @@ $path-img  : '../img';
 $brk-narrow : '(min-width: 768px)';
 $brk-wide 	: '(min-width: 1024px)';
 
-//  Write mixins for media queries.
+//  Write mixins for media queries - with help from warren.leyes
 $tablet-width: 768px;
 $desktop-width: 1024px;
 @mixin tablet {
-  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+  @media (min-width: #{$tablet-width}) {
     @content;
   }
 }
