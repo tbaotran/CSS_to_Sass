@@ -15,44 +15,46 @@
       @extend %clearfix;
       padding-top: 1.75em;
       padding-bottom: 1.75em;
-      @include desktop {
-      position: relative;
-      }
       @include tablet {
       padding-bottom: 3em;
-      }
     }
+      @include desktop {
+      position: relative;
+    }
+  }
     &-picture {
       width: 70%;
       margin-top: 0.5em;
       margin-bottom: 0.5em;
+      @include tablet {
+      max-width: 35%;
+      float: right; 
+      display: inline-block;  
+    }
       @include desktop  {
       float: right;
       clear: right;
-      }
-      @include tablet {
-      max-width: 40%;
-      float: right; 
-      display: $inbk;  
-      }
-    }
+      margin-right: 1em;
+      display: inline-block; 
+    }   
+  }
     &-intro {
       margin-top: 0.8em;
       margin-bottom: 0.8em;
-      @include desktop  {
-      margin-top: 0;
-      max-width: 55%;
-      display: $inbk; 
-      }
       @include tablet {
       margin-top: 0;
       max-width: 60%;
       font-size: 1.25em;
       float:left;
       text-align: left;
-      display: $inbk;  
-      }
+      display: inline-block;  
     }
+      @include desktop  {
+      margin-top: 0;
+      max-width: 60%;
+      display: inline-block; 
+    }    
+  }
 }
 
 

@@ -45,7 +45,7 @@ nav a {
   margin-bottom: 4px;
     @include tablet {
   	display: inline-block;
-    background-color: rgb(249,249,249);
+    background-color: $alabaster;
     margin-left: 1em;
     margin-right: 1em;
   }

@@ -10,12 +10,12 @@
   padding: 0 16px;
 
   @include tablet {
-    max-width: 768px;
+    max-width: $tablet-width;
     padding: 0 32px;
   }
 
   @include desktop {
-    max-width: 1024px;
+    max-width: $desktop-width;
   }
 }
 /************************************
@@ -63,16 +63,17 @@
 
 /*  set font-size/line-height for project info  */
 .project-info {
-  line-height: 1.5em;
-  font-size: 16px;
-  @include desktop {
-    width: 75%;
-  }
   @include tablet {
   margin: 0 auto;
   font-size: 14px;
   width: 80%;
   }
+  line-height: 1.5em;
+  font-size: 16px;
+  @include desktop {
+    width: 75%;
+  }
+
 }
 
 
